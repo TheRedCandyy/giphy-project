@@ -1,2 +1,2 @@
-# giphy-project
-Giphy project for FE training by Alex Tavares
+# GIPHY Project
+GIPHY Project for FE training by Alex Tavares
