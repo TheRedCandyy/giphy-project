@@ -1,0 +1,23 @@
+{
+  "name": "giphy-project",
+  "version": "1.0.0",
+  "description": "GIPHY Project for FE training by Alex Tavares",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRedCandyy/giphy-project.git"
+  },
+  "author": "Alexandre Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRedCandyy/giphy-project/issues"
+  },
+  "homepage": "https://github.com/TheRedCandyy/giphy-project#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}

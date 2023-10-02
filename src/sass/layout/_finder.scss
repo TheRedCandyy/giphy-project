@@ -1,0 +1,16 @@
+.finder {
+  min-height: 100vh;
+  flex: auto;
+  margin: 1em;
+  padding: 0 2em;
+
+  @include respond(desktop-only) {
+    border-right: 1px solid $color-white;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+    margin: 2em 0 0 0;
+    @include glassmorphism($color-secondary-dark);
+  }
+}

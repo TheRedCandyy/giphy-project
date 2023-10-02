@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  margin: 1em;
+  @include clearfix();
+
+  @include respond(desktop-only) {
+    @include glassmorphism($color-secondary-dark);
+  }
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
