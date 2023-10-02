@@ -1,0 +1,12 @@
+.trending {
+  min-height: 100vh;
+  flex-basis: 250px;
+  margin: 1em;
+  padding: 0 2em;
+
+  @include respond(tab-port) {
+    display: none;
+    margin: 2em 0 0 0;
+    @include glassmorphism($color-secondary-dark);
+  }
+}
