@@ -1,17 +1,18 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/navbar";
+@import 'components/navbar';
+@import 'components/spinner';
 
-@import "layout/header";
-@import "layout/main";
-@import "layout/finder";
-@import "layout/random";
-@import "layout/trending";
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/finder';
+@import 'layout/random';
+@import 'layout/trending';
 
-@import "pages/home";
+@import 'pages/home';
