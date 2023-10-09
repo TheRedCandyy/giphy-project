@@ -6,11 +6,12 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/navbar';
-@import 'components/spinner';
+@import 'components/loading';
+@import 'components/pagination';
 
 @import 'layout/header';
 @import 'layout/main';
+@import 'layout/navbar';
 @import 'layout/finder';
 @import 'layout/random';
 @import 'layout/trending';

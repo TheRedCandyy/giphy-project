@@ -22,7 +22,7 @@ export default class View {
 
   renderSpinner() {
     const markup = `
-      <span class="spinner"></span>
+      <div class="loading"></div>
     `;
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);

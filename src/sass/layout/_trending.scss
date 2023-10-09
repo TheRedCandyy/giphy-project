@@ -3,6 +3,19 @@
   margin: 1em;
   padding: 0 2em;
 
+  &-images {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      display: block;
+      padding: 0.5em;
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   @include respond(tab-port) {
     display: none;
     margin: 2em 0 0 0;

@@ -1,6 +1,7 @@
 .finder {
   flex: auto;
   flex-basis: 70%;
+  min-height: 600px;
   margin: 1em;
   padding: 0 2em;
 
@@ -12,5 +13,67 @@
     display: none;
     margin: 2em 0 0 0;
     @include glassmorphism($color-secondary-dark);
+  }
+
+  &-form {
+    display: flex;
+  }
+
+  &-search {
+    width: 100%;
+    padding: 1em;
+    margin-right: 1em;
+    font-size: 2em;
+    @include glassmorphism($color-secondary-light);
+
+    &:focus {
+      @include glassmorphism($color-secondary-dark);
+    }
+  }
+
+  &-btn {
+    max-width: 100px;
+    padding: 1em;
+    // border-radius: 0.2em;
+    margin-left: auto;
+    font-size: 2em;
+    @include glassmorphism($color-secondary-light);
+
+    &:hover {
+      cursor: pointer;
+      @include glassmorphism($color-secondary-dark);
+    }
+  }
+
+  &-images {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      display: contents;
+    }
+
+    img {
+      display: block;
+      padding: 0.5em;
+      object-fit: contain;
+      width: 25%;
+      height: auto;
+      position: relative;
+
+      @include respond(big-desktop) {
+        width: 20%;
+      }
+
+      @include respond(tab-land) {
+        width: 50%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(50%);
+      }
+    }
   }
 }
