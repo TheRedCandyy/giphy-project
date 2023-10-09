@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="src/sass/main.scss" />
 
     <!-- Scripting -->
+    <script
+      src="https://kit.fontawesome.com/8905e36502.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" defer src="src/js/controller.js"></script>
 
     <title>GIPHY PROJECT BY ALEX TAVARES</title>
@@ -22,17 +26,17 @@
       <div class="header--logo">GIPHY PROJECT</div>
       <nav class="navbar">
         <ul class="navbar--items">
-          <li class="navbar--item navbar--item-active">
+          <li class="navbar--item navbar--item-active" data-tab="random">
             <svg class="navbar--icon">
               <use xlink:href="src/img/sprite.svg#icon-image"></use>
             </svg>
           </li>
-          <li class="navbar--item">
+          <li class="navbar--item" data-tab="finder">
             <svg class="navbar--icon">
               <use xlink:href="src/img/sprite.svg#icon-search"></use>
             </svg>
           </li>
-          <li class="navbar--item">
+          <li class="navbar--item" data-tab="trending">
             <svg class="navbar--icon">
               <use xlink:href="src/img/sprite.svg#icon-fire"></use>
             </svg>
@@ -41,13 +45,24 @@
       </nav>
     </header>
     <main class="main">
-      <div class="random">
+      <div class="random active">
         <h1 class="heading-primary--main">Random</h1>
         <div class="random-image">
+          <div class="random-image--container"></div>
           <button class="random-image--btn">Next Image</button>
         </div>
       </div>
-      <div class="finder"><h1 class="heading-primary--main">Finder</h1></div>
+      <div class="finder">
+        <h1 class="heading-primary--main">Finder</h1>
+        <form action="" class="finder-form">
+          <input type="text" class="finder-search" required />
+          <button type="submit" class="finder-btn">
+            <i class="fas fa-search finder-btn--icon"></i>
+          </button>
+        </form>
+        <div class="finder-images"></div>
+        <div class="pagination"></div>
+      </div>
       <div class="trending">
         <h1 class="heading-primary--main">Trending</h1>
         <div class="trending-images"></div>

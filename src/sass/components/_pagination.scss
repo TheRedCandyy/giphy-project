@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  margin: 2em 0;
+  &__btn {
+    padding: 1em;
+    @include glassmorphism($color-secondary-light);
+
+    &:hover {
+      cursor: pointer;
+      @include glassmorphism($color-secondary-dark);
+    }
+  }
+  &__icon {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  &__next {
+    margin-left: auto;
+  }
+}

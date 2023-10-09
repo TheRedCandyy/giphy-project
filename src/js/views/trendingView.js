@@ -2,6 +2,7 @@ import View from './View';
 
 class trendingView extends View {
   _parentElement = document.querySelector('.trending-images');
+  _errorMessage = 'There was an error loading your images...';
 
   _generateMarkup() {
     let markup = ``;
@@ -12,8 +13,6 @@ class trendingView extends View {
         `<img
         src="${image.imageDownsized.url}"
         alt="Trending Image"
-        width='250px'
-        height='250px'
         />
         `;
     });

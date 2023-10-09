@@ -1,5 +1,6 @@
 .random {
   flex-basis: 350px;
+  flex-shrink: 0;
   margin: 1em;
   padding: 0 2em;
 
@@ -8,11 +9,37 @@
   }
 
   @include respond(tab-port) {
-    display: block;
+    display: none;
     margin: 2em 0 0 0;
     @include glassmorphism($color-secondary-dark);
   }
 
-  &-image img {
+  &-image {
+    &--container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2em;
+      min-height: 200px;
+    }
+    &--btn {
+      width: 100%;
+      font-size: 1.4em;
+      padding: 1em;
+      margin-bottom: 3em;
+      @include glassmorphism($color-secondary-light);
+
+      &:hover {
+        cursor: pointer;
+        @include glassmorphism($color-secondary-dark);
+      }
+    }
+
+    & img {
+      margin: 2em 0;
+      object-fit: contain;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
   }
 }
