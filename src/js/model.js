@@ -75,7 +75,3 @@ export const getSearchResultsPage = function (page = state.finder.page) {
 
   return state.finder.results.slice(start, end);
 };
-
-// const init = function () {};
-
-// init();
