@@ -1,5 +1,5 @@
 import { async } from 'regenerator-runtime';
-import { API_URL, RES_PER_PAGE, KEY, API_KEY } from './config';
+import { API_URL, RES_PER_PAGE, API_KEY, TRENDING_RES } from './config';
 import { AJAX } from './helpers';
 
 export const state = {
@@ -58,7 +58,9 @@ export const loadFinderImages = async function (query = 'bucks') {
 
 export const loadTrendingImages = async function () {
   try {
-    const data = await AJAX(`${API_URL}trending?${API_KEY}`);
+    const data = await AJAX(
+      `${API_URL}trending?${API_KEY}&limit=${TRENDING_RES}`
+    );
 
     data.data.forEach(image => state.trending.push(createImageObject(image)));
   } catch (err) {

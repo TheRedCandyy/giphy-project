@@ -26,11 +26,14 @@
       font-size: 1.4em;
       padding: 1em;
       margin-bottom: 3em;
-      @include glassmorphism($color-secondary-light);
+      border: 1px solid $color-black;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 
       &:hover {
         cursor: pointer;
-        @include glassmorphism($color-secondary-dark);
+        background-color: $color-white;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
       }
     }
 
