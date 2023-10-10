@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="src/sass/main.scss" />
 
     <!-- Scripting -->
-    <script
-      src="https://kit.fontawesome.com/8905e36502.js"
-      crossorigin="anonymous"
-    ></script>
     <script type="module" defer src="src/js/controller.js"></script>
 
     <title>GIPHY PROJECT BY ALEX TAVARES</title>
@@ -57,7 +53,9 @@
         <form action="" class="finder-form">
           <input type="text" class="finder-search" required />
           <button type="submit" class="finder-btn">
-            <i class="fas fa-search finder-btn--icon"></i>
+            <svg class="finder-btn--icon">
+              <use xlink:href="src/img/sprite.svg#icon-search"></use>
+            </svg>
           </button>
         </form>
         <div class="finder-images"></div>
