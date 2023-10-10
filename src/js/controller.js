@@ -15,7 +15,6 @@ const controlRandomImage = async function () {
 
     randomView.render(model.state.randomImage);
   } catch (err) {
-    console.log(err);
     randomView.renderError();
   }
 };
@@ -28,7 +27,6 @@ const controlTrendingImages = async function () {
 
     trendingView.render(model.state.trending);
   } catch (err) {
-    console.log(err);
     trendingView.renderError();
   }
 };
@@ -42,7 +40,6 @@ const controlFinderImages = async function (query) {
 
     paginationView.render(model.state.finder);
   } catch (err) {
-    console.log(err);
     finderView.renderError();
   }
 };
