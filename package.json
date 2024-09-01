@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "GIPHY Project for FE training by Alex Tavares",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/TheRedCandyy/giphy-project#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.9.3"
   },
   "dependencies": {
